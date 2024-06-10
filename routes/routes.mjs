@@ -2,7 +2,7 @@ import express from "express";
 import mongooseSchema from "../models/model.mjs";
 const Router = express.Router();
 const app = express();
-app.use(express.json());
+Router.use(express.json());
 
 Router.post("/post", async (req, res) => {
   console.log(req.body);
